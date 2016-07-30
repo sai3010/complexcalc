@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="complexcalc.page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:complexcalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Rectangle Fill="#FF30DABB" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="75" Margin="0,0,0,555" Width="600"/>
+        <TextBlock Name="numb" HorizontalAlignment="Center" FontWeight="Bold" Margin="125,10,114,555" FontSize="30" Text="NUMBER  "/>
+        <TextBox Name="real" InputScope="Number" VerticalAlignment="Top" Height="100" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="10,258,230,0" Width="120" Header="Real" FontSize="20" />
+        <TextBox x:Name="imag" VerticalAlignment="Top" InputScope="Number" Height="100" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="230,258,10,0" Width="120" Header="Imag" FontSize="20" />
+        <TextBlock x:Name="operation" HorizontalAlignment="Center" Margin="0,400,180,0"  TextWrapping="Wrap" Text="OPERATIONS" FontSize="20" VerticalAlignment="Top" Height="40" Width="152"/>
+        <ComboBox Margin="162,400,0,0" HorizontalAlignment="Center" Width="188">
+            <ComboBoxItem Name="reci" Content="Reciprocal" Tapped="reci_Tapped"/>
+            <ComboBoxItem Name="power" Content="Power" Tapped="power_Tapped"/>
+            <ComboBoxItem Name="conj" Content="Conjugate" Tapped="conj_Tapped" />
+            <ComboBoxItem Name="pol" Content="Polar Form" Tapped="pol_Tapped" />
+        </ComboBox>
+        <TextBox x:Name="resultTxtBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" HorizontalAlignment="Center" Margin="0,120,0,0" Width="360" Header="Result" FontSize="20" />
+        <Button x:Name="button" Background="#FF30DABB" Content="clear" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Margin="0,480,0,0" Width="120" Click="button_Click"/>
+        <Button x:Name="plus" Content="+" HorizontalAlignment="Center" Margin="0,305,50,0" VerticalAlignment="Top" FontSize="20" Click="plus_Click"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Center" Margin="50,305,0,0" VerticalAlignment="Top" FontSize="20" Click="minus_Click"/>
+
+
+    </Grid>
+</Page>

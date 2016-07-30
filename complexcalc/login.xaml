@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="complexcalc.login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:complexcalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+  
+        
+     
+        <Grid x:Name="LayoutRoot" Background="White">
+           
+            <Grid.RowDefinitions>
+             
+                <RowDefinition Height="Auto"/>
+              
+                <RowDefinition Height="*"/>
+               
+            </Grid.RowDefinitions>
+           
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="12,17,0,175" Grid.RowSpan="2">
+                
+                <!--Title-->
+                
+                <TextBlock Text="Login Page" HorizontalAlignment="Center" FontWeight="SemiBold" Foreground="Black" FontSize="40"/>
+                            
+
+                <!--UserName-->
+              
+                <TextBlock Text="User Name" Margin="0,100,0,0" HorizontalAlignment="Left" Foreground="Black" FontSize="30"/>
+              
+                <TextBox  BorderBrush="LightGray" Margin="0,10,0,0" Name="User" />
+                            
+
+                <!--Password-->
+               
+                <TextBlock  Foreground="Black" Text="Password" HorizontalAlignment="Left" Margin="0,10,0,0" FontSize="30"/>
+              
+                <PasswordBox Margin="0,10,0,0" PasswordRevealMode="Peek" BorderBrush="LightGray" Name="Pass"  />
+               
+                <!--Login Button-->
+
+            <Button Content="Login" Background="#FF30DABB" Name="Login" Click="Login_Click" Margin="0,20,0,0" Width="348" />
+
+            <Button Content="Cancel" Background="#FF30DABB" Name="cancel" Click="Logout_Click" Margin="0,20,0,0" Width="348"/>
+                            
+
+            </StackPanel>
+                  
+
+        </Grid>
+
+
+
+    
+</Page>

@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="complexcalc.page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:complexcalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Rectangle Fill="#FF30DABB" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Margin="0,0,0,555" Width="600"/>
+        <RadioButton x:Name="rad" Content="with single number" HorizontalAlignment="Center" Margin="0,180,0,0" FontSize="30" VerticalAlignment="Top" Checked="rad_Checked">
+            <RadioButton.ContentTransitions>
+                <TransitionCollection>
+                    
+                    <PopupThemeTransition/>
+                </TransitionCollection>
+            </RadioButton.ContentTransitions>
+        </RadioButton>
+        <RadioButton x:Name="rad1" Content="with two numbers" HorizontalAlignment="Center" Margin="0,270,0,0" FontSize="30" VerticalAlignment="Top" Checked="rad1_Checked">
+        <RadioButton.ContentTransitions>
+            <TransitionCollection>
+
+                <PopupThemeTransition/>
+            </TransitionCollection>
+        </RadioButton.ContentTransitions>
+        </RadioButton>
+        <TextBlock x:Name="operation" Text="Operation Type" FontSize="30" Margin="80,25,60,555" HorizontalAlignment="Center" FontWeight="Bold" RenderTransformOrigin="0.5,0.933"/>
+
+
+    </Grid>
+</Page>

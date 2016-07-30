@@ -1,0 +1,107 @@
+﻿<Page
+    x:Class="complexcalc.fp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:complexcalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gainsboro" Tapped="Grid_Tapped" >
+        <StackPanel>
+            <StackPanel.Resources>
+                <Storyboard x:Name="fadeout">
+                    <FadeOutThemeAnimation   TargetName="comp" />
+                    <FadeOutThemeAnimation  TargetName="calc"/>
+                    <FadeOutThemeAnimation  TargetName="sai"/>
+                    <FadeOutThemeAnimation  TargetName="megha"/>
+                    <FadeOutThemeAnimation  TargetName="spoo"/>
+                    <FadeOutThemeAnimation  TargetName="siri"/>
+                    <FadeOutThemeAnimation  TargetName="click"/>
+                </Storyboard>
+            </StackPanel.Resources>
+            <StackPanel>
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Storyboard x:Name="welc"  Completed="welcome_Completed" >
+                            <FadeInThemeAnimation   TargetName="comp" />
+                        </Storyboard>
+                    </StackPanel.Resources>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="cal"  Completed="cal_Completed">
+                                <FadeInThemeAnimation  TargetName="calc"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="sp" Completed="sp_Completed">
+                                <FadeInThemeAnimation  TargetName="sai"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="ms" Completed="ms_Completed" >
+                                <FadeInThemeAnimation  TargetName="megha"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="ss" Completed="ss_Completed">
+                                <FadeInThemeAnimation  TargetName="spoo"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="sk" Completed="sk_Completed"  >
+                                <FadeInThemeAnimation  TargetName="siri"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="clic"  Completed="clic_Completed" >
+                                <FadeInThemeAnimation  TargetName="click"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <Storyboard x:Name="clicfade" Completed="clicfade_Completed" >
+                                <FadeOutThemeAnimation  TargetName="click"/>
+                            </Storyboard>
+                        </StackPanel.Resources>
+
+                    </StackPanel>
+
+
+
+
+
+                    <TextBlock x:Name="comp" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="240,184,-40,0" TextWrapping="Wrap" Text="Complex" VerticalAlignment="Top" Width="156" Height="49"/>
+
+
+                    <TextBlock x:Name="calc" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="CALCULATOR" FontSize="50" VerticalAlignment="Top" Width="340" Height="87"/>
+                    <TextBlock x:Name="click" TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" Margin="0,20,0,0" Foreground="Red" Text="Click Any where To Continue"/>
+                    <HyperlinkButton Content="Developed By" HorizontalAlignment="Center" FontSize="20" Margin="0,100,0,0" Click="HyperlinkButton_Click"/>
+                    <TextBlock x:Name="sai" Visibility="Collapsed" TextWrapping="Wrap" Text="Sai Prasanth R" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                    <TextBlock x:Name="megha" Visibility="Collapsed"  TextWrapping="Wrap" Text="CSE" TextAlignment="Center" HorizontalAlignment="Center" Width="100" Margin="0,20,0,0"/>
+                    <TextBlock x:Name="spoo" TextWrapping="Wrap" Visibility="Collapsed" Width="250" Text="saiprasanth2007@gmail.com" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    <TextBlock x:Name="siri" TextWrapping="Wrap" Visibility="Collapsed" Text="https://github.com/sai3010" TextAlignment="Center" Width="200" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

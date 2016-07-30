@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="complexcalc.developed"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:complexcalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Ivory">
+
+        <Ellipse Margin="0,50,0,0" VerticalAlignment="Top" Width="200" Height="200">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage DecodePixelHeight="250" DecodePixelWidth="250" UriSource="Assets/sp.jpg" />
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <TextBlock TextWrapping="Wrap" Height="20" Text="Sai Prasanth R" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+        <TextBlock TextWrapping="Wrap" Height="20" Text="CSE" TextAlignment="Center" HorizontalAlignment="Center" Width="100" Margin="0,50,0,0"/>
+        <TextBlock TextWrapping="Wrap" Width="250" Height="20" Text="saiprasanth2007@gmail.com" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,100,0,0"/>
+        <TextBlock TextWrapping="Wrap" Text="https://github.com/sai3010" Height="20" TextAlignment="Center" Width="200" HorizontalAlignment="Center" Margin="0,150,0,0"/>
+    </Grid>
+</Page>
